@@ -1,0 +1,489 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-red: rgb(229, 9, 20);
+    --main-transition: 0.3s;
+    --main-back: rgb(7 7 31);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.header {
+    background-color: rgb(7 7 31);
+    min-height: 710px;
+    position: relative;
+    margin: 0;
+}
+
+.header .container {
+    min-height: 710px;
+}
+
+.header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: white;
+    padding-top: 20px;
+}
+
+.header .head .logo {
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: -250px;
+}
+
+.header .head .lan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -350px;
+}
+
+.header .head .lan p {
+    margin-right: 20px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 10%;
+    transition: var(--main-transition);
+}
+
+.header .head .lan p:hover {
+    background-color: red;
+    border-color: red;
+}
+
+.header .head .lan a {
+    color: white;
+    background-color: var(--main-red);
+    padding: 5px 10px;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+.header .content {
+    background-image: url(../css/images/EG-en-20230417-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin-left: -260px;
+    border-radius: 15px;
+    height: 600px;
+    margin-top: 10px;
+}
+
+
+.header .content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 60%);
+}
+
+.header .content::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(34, 2, 2), rgba(22, 3, 3, 0.011));
+}
+
+.header .content .text h3 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    width: 600px;
+    margin-left: 125px;
+    margin-top: 120px;
+}
+
+.header .content .text p {
+    width: 310px;
+    margin-left: 125px;
+    font-size: 21px;
+    position: relative;
+    font-weight: bold;
+}
+
+.header .content form {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 125px;
+}
+
+.header .content form p {
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+}
+
+.header .content form input {
+    background-color: #2e2c2cc2;
+    border: 1px solid #777;
+    padding: 20px 200px 10px 0;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.header .content form input::placeholder {
+    padding-left: 20px;
+    font-weight: bold;
+    color: #a4a2a2;
+}
+
+.header .content form a {
+    color: white;
+    background-color: red;
+    text-transform: capitalize;
+    padding: 14px 40px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.header .content form a i {
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.header .content form a:hover {
+    background-color: rgb(135, 47, 47);
+    border-color: black;
+}
+
+.land1 {
+    background-color: var(--main-back);
+    margin-top: 0;
+    position: relative;
+}
+
+.land1 .content {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.land1 .content .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.land1 .content .text p {
+    width: 550px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -25px;
+    line-height: 1.4;
+}
+
+.land1 .content .image img {
+    width: 100%;
+}
+
+.land2 {
+    background-color: var(--main-back);
+    margin-top: 0;
+    position: relative;
+}
+
+.land2 .content {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.land2 .content .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.land2 .content .text p {
+    width: 550px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -25px;
+    line-height: 1.4;
+}
+
+.land2 .content .image img {
+    width: 100%;
+}
+
+.land3 {
+    background-color: var(--main-back);
+    margin-top: 0;
+    position: relative;
+}
+
+.land3 .content {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.land3 .content .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.land3 .content .text p {
+    width: 550px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -25px;
+    line-height: 1.4;
+}
+
+.land3 .content .image img {
+    width: 100%;
+}
+
+.land4 {
+    background-color: var(--main-back);
+    margin-top: 0;
+    position: relative;
+}
+
+.land4 .content {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.land4 .content .text h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.land4 .content .text p {
+    width: 550px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -25px;
+    line-height: 1.4;
+}
+
+.land4 .content .image img {
+    width: 100%;
+}
+
+.ask {
+    background-color: var(--main-back);
+    position: relative;
+    margin-top: 0;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.ask .container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+    margin-top: 150px;
+    position: relative;
+}
+
+.ask h2 {
+    position: relative;
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.ask ul {
+    position: relative;
+    width: 1300px;
+}
+
+.ask ul li {
+    color: white;
+    display: block;
+    background-color: rgb(12, 12, 52);
+    margin: 10px;
+    padding: 40px 30px;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+}
+
+.ask ul li:hover {
+    background-color: rgb(42, 42, 113);
+}
+
+.ask ul p {
+    display: none;
+}
+
+.ask form {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.ask form p {
+    font-size: 18px;
+    position: relative;
+    font-weight: bold;
+    color: white;
+}
+
+.ask form input {
+    background-color: #2e2c2cc2;
+    border: 1px solid #777;
+    padding: 20px 200px 10px 0;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.ask form input::placeholder {
+    padding-left: 20px;
+    font-weight: bold;
+    color: #a4a2a2;
+}
+
+.ask form a {
+    color: white;
+    background-color: red;
+    text-transform: capitalize;
+    padding: 14px 40px;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+
+.ask form a i {
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.ask form a:hover {
+    background-color: rgb(135, 47, 47);
+    border-color: black;
+}
+
+.last {
+    background-color: var(--main-back);
+    position: relative;
+    padding-top: 100px;
+    margin-top: 0;
+    padding-bottom: 100px;
+
+}
+
+.last .content {
+    margin-left: -200px;
+}
+
+.last .content a:first-of-type {
+    color: #777;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.last .content .cols {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: #777;
+}
+
+.last .content .cols .col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.last .content .cols .col a {
+    text-decoration: underline;
+    color: #777;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.last .content .lan p {
+    color: #777;
+}
+
+.last .content .lan p:first-of-type {
+    background-color: black;
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    width: fit-content;
+    border: 1px solid white;
+    margin-bottom: 40px;
+}
+
+.last .content .lan p:first-of-type:hover {
+    background-color: red;
+}
